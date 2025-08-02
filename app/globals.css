@@ -1,26 +1,83 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-background: #fafafa;
+  --color-muted-bg: #f3f4f6;
+
+  --color-title-color: #171717;
+  --color-subtitle-color: #6b7280;
+  --color-content: #364153;
+
+  /* 🔵 Primary (Teal) */
+  --color-primary: #008080;
+  --color-primary-hover: #006666;
+  --color-primary-soft: #ccf2f2;
+
+  /* 🔵 Secondary (Soft Indigo) */
+  --color-secondary: #7C3AED;
+  /* Violet-600 */
+  --color-secondary-hover: #5B21B6;
+  --color-secondary-soft: #ede9fe;
+
+  --color-accent: #F05D5E;
+  --color-accent-hover: #D94F51;
+  --color-accent-soft: #ffe5e5;
+
+
+  /* 🧱 Borders / Dividers */
+  --color-border: #e5e7eb;
+
+  /* ✅ States (Success/Warning) */
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-danger: #EF4444;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer theme {
+  .dark {
+    --color-background: #0a0a0a;
+    --color-muted-bg: #1a1a1a;
+    --color-title-color: #ffffff;
+    --color-subtitle-color: #9ca3af;
+    --color-content: #d1d5db;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --color-primary: #149191;
+    --color-primary-hover: #0f7c7c;
+    --color-primary-soft: #103636;
+
+    --color-secondary: #a78bfa;
+    --color-secondary-hover: #8b5cf6;
+    --color-secondary-soft: #312e81;
+
+    --color-accent: #f47272;
+    --color-accent-hover: #ec4c4c;
+    --color-accent-soft: #4b1f1f;
+
+    --color-border: #2a2a2a;
+    --color-success: #34d399;
+    --color-warning: #fbbf24;
+    --color-danger: #f87171;
   }
 }
 
+html,
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  transition:
+    background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out,
+    border-color 0.3s ease-in-out;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-content);
+}
+
+@layer components {
+  .section {
+    @apply min-h-dvh p-4 md:p-6 mb-5;
+  }
+
 }
