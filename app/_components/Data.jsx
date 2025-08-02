@@ -29,17 +29,17 @@ export const metaDataContent = {
   authors: [
     {
       name: "Nidhi Patel",
-      // url: "https://yourdomain.com/"
+      url: "https://patelnidhi.vercel.app/",
     },
   ],
   creator: "Nidhi Patel",
   publisher: "Nidhi Patel",
-  //   metadataBase: "https://yourdomain.com/",
+  metadataBase: "https://patelnidhi.vercel.app/",
   openGraph: {
     title: "Nidhi Patel | Digital Marketing Specialist",
     description:
       "Helping brands grow through strategic SEO, content, and social media. Explore the digital expertise of Nidhi Patel.",
-    // url: "https://yourdomain.com/",
+    url: "https://patelnidhi.vercel.app/",
     siteName: "Nidhi Patel",
     images: [
       {
@@ -60,7 +60,7 @@ export const metaDataContent = {
     images: ["/nidhi2.webp"],
   },
   alternates: {
-    // canonical: "https://yourdomain.com/",
+    canonical: "https://patelnidhi.vercel.app/",
   },
 };
 
