@@ -4,7 +4,7 @@ import Navbar from "@/_components/Navbar";
 import Footer from "@/_components/Footer";
 import { ThemeProvider } from 'next-themes';
 import { metaDataContent } from "@/_components/Data";
-
+import StructuredData from "@/_components/StructuredData";
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -24,6 +24,7 @@ export default function RootLayout({ children }) {
       <body
        className={poppins.className}
       >
+        <StructuredData />
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <Navbar/>
           <div className="w-full md:w-[65%] mx-auto">

@@ -69,7 +69,7 @@ export const metaDataContent = {
 /* -------------------------------------------------------------------------- */
 
 export const introduction = {
-  image: "/ParthPala.webp",
+  image: "/nidhi.webp",
   name: "Nidhi Patel",
   location: "Ahmedabad, India",
   resume: "/NidhiPatel_Resume.pdf",
