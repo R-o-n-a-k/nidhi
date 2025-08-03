@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /package.json
+Disallow: /README.md
+
+Sitemap: https://patelnidhi.vercel.app/sitemap.xml
