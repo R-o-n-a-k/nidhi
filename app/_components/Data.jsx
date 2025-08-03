@@ -43,7 +43,7 @@ export const metaDataContent = {
     siteName: "Nidhi Patel",
     images: [
       {
-        url: "/nidhi1.webp",
+        url: "/nidhi.webp",
         width: 1200,
         height: 630,
         alt: "Nidhi Patel - Digital Marketing Specialist",
@@ -57,7 +57,7 @@ export const metaDataContent = {
     title: "Nidhi Patel | Digital Marketing Specialist",
     description:
       "Empowering brands with smart SEO, social media, and AI-powered digital strategies. 1.5+ years of results-driven marketing.",
-    images: ["/nidhi2.webp"],
+    images: ["/nidhi.webp"],
   },
   alternates: {
     canonical: "https://patelnidhi.vercel.app/",
