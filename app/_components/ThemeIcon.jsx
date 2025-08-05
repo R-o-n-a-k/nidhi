@@ -18,7 +18,7 @@ const ThemeIcon = () => {
       className="cursor-pointer transition-all duration-300 ease-in-out hover:scale-110 relative w-5 h-5"
     >
       <FaSun className="theme-icon hidden dark:block text-[#FFE28A]" />
-      <FaMoon className="theme-icon block dark:hidden text-[#93C5FD]" />
+      <FaMoon className="theme-icon block dark:hidden text-[#CDCDCD]" />
     </div>
   );
 };

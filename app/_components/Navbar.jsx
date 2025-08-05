@@ -25,7 +25,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="sticky w-fit bg-transparent top-0 z-50 rounded-full mx-auto my-4 px-2 backdrop-blur-sm shadow-lg border">
+      <nav className="sticky w-fit bg-background top-2 z-50 rounded-full mx-auto my-4 px-2 backdrop-blur-3xl shadow-xl dark:border border-primary">
         <ul className="flex gap-2 md:gap-2 text-lg md:text-xl bg-transparent text-content">
           {navData.map((item, index) => {
             const isActive = pathname === item.path;
