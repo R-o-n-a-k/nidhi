@@ -3,7 +3,7 @@ import React from "react";
 const Loader = () => {
   return (
     <>
-      <div className="flex items-center justify-center h-40 w-full">
+      <div className="flex items-center justify-center h-screen w-full ">
         {["L", "O", "A", "D", "I", "N", "G"].map((letter, index) => (
           <div
             key={index}
