@@ -4,6 +4,7 @@
 @theme {
   --color-background: #fafafa;
   --color-muted-bg: #f3f4f6;
+  --color-snow-background: #e0e0e0;
 
   --color-title-color: #171717;
   --color-subtitle-color: #6b7280;
@@ -76,13 +77,55 @@ body {
   color: var(--color-content);
 }
 
+/* Scroll bar */
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background-muted);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+  border-radius: 1px;
+  border: 1px solid transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+  background-color: var(--color-primary-hover);
+}
+
+
 @layer components {
-  .section {
-    @apply min-h-dvh p-4 md:p-6 mb-5;
+  .page {
+    @apply w-full md:w-[65%] mx-auto h-[82.2vh] p-4 md:p-4;
   }
 }
 
 @layer utilities {
+
+  /* -----------------Font Name------------------ */
+  /* .font-intro-name {
+    font-family: var(--font-rubik-vinyl), sans-serif;
+  } */
+
+  /* .font-intro-name {
+    font-family: var(--font-rampart-one), cursive;
+  } */
+
+  /* .font-intro-name {
+    font-family: var(--font-bungee-shade), sans-serif;
+  } */
+
+  .font-intro-name {
+    font-family: var(--font-doodle-shadow), cursive;
+  }
+
+  /* -----------------profile picture------------------ */
   .animate-morph {
     animation: morph 5s ease-in-out infinite;
   }
@@ -100,5 +143,35 @@ body {
       border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     }
   }
+
+  /* --------------------Loader------------------- */
+
+  .animate-rotate-x {
+    animation: rotate-x 2s linear infinite;
+  }
+
+  @keyframes rotate-x {
+    0% {
+      transform: rotateX(0);
+    }
+
+    12.5% {
+      transform: rotateX(90deg);
+    }
+
+    25% {
+      transform: rotateX(180deg);
+    }
+
+    37.5% {
+      transform: rotateX(270deg);
+    }
+
+    50%,
+    100% {
+      transform: rotateX(360deg);
+    }
+  }
+
 
 }

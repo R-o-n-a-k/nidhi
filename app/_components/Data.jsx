@@ -71,6 +71,7 @@ export const metaDataContent = {
 export const introduction = {
   image: "/nidhi.webp",
   name: "Nidhi Patel",
+  designation: "Digital Marketing Specialist",
   location: "Ahmedabad, India",
   resume: "/NidhiPatel_Resume.pdf",
 };
@@ -79,7 +80,7 @@ export const introduction = {
 /*                                    ABOUT                                   */
 /* -------------------------------------------------------------------------- */
 
-export const about = {
+export const aboutPage = {
   title: "About",
   aboutFirstpara:
     "I am Nidhi Patel, a digital marketing specialist with 1.5+ years of experience in SEO, social media, and content. I’ve led growth campaigns that boosted traffic by 55% and built strong online communities using data-driven strategy and creative execution.",
