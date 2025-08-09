@@ -104,6 +104,12 @@ body {
   .page {
     @apply w-full md:w-[65%] mx-auto h-[82.2vh] p-4 md:p-4;
   }
+
+  .home-introduction {
+    @apply mb-12 italic text-lg md:text-2xl font-semibold text-content tracking-widest leading-tight text-shadow-lg
+  }
+
+
 }
 
 @layer utilities {

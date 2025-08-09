@@ -71,7 +71,14 @@ export const metaDataContent = {
 export const introduction = {
   image: "/nidhi.webp",
   name: "Nidhi Patel",
-  designation: "Digital Marketing Executive",
+  // designation: "Digital Marketing Executive",
+  designation: [
+    "Digital Marketing Executive",
+    "SEO Expert",
+    "Social Media Strategist",
+    "Content Marketing",
+    "AI Marketing",
+  ],
   location: "Ahmedabad, India",
   resume: "/NidhiPatel_MarketingExecutive_Resume.pdf",
 };

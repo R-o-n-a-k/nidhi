@@ -1,7 +1,8 @@
 import {introduction} from "@/_components/Data.jsx";
 import Image from 'next/image'
 import ParticlesBackground from "./_components/ParticlesBackground";
- 
+import WordRotate from "./_animations/WordRotate"; 
+
 export default function Home() {
   return (
     <>
@@ -35,8 +36,14 @@ export default function Home() {
                 {introduction.name}
               </h1>
             
-              <h2 className="mb-12 italic text-lg md:text-2xl font-semibold text-content tracking-widest leading-tight text-shadow-lg">{introduction.designation}</h2>
+              {/* <h2 className="mb-12 italic text-lg md:text-2xl font-semibold text-content tracking-widest leading-tight text-shadow-lg">{introduction.designation}</h2> */}
               
+                <WordRotate 
+                      words={introduction.designation}
+                      duration={1500} 
+                      className="home-introduction"
+                    />
+
               <a
                 href={introduction.resume} // <-- Update with your actual file path
                 download
