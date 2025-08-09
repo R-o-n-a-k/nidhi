@@ -16,11 +16,11 @@ const Navbar = () => {
   const pathname = usePathname();
 
   const navData = [
-    { icon: <FaHome />, path: "/" },
-    { icon: <FaUser />, path: "/about" },
-    { icon: <FaBriefcase />, path: "/career" },
-    { icon: <FaFolderOpen />, path: "/project" },
-    { icon: <FaEnvelope />, path: "/contact" },
+    { icon: <FaHome />, path: "/", title: "Home" },
+    { icon: <FaUser />, path: "/about", title: "About" },
+    { icon: <FaBriefcase />, path: "/career", title: "Career" },
+    { icon: <FaFolderOpen />, path: "/project", title: "Projects" },
+    { icon: <FaEnvelope />, path: "/contact", title: "Contact" },
   ];
 
   return (
@@ -32,6 +32,7 @@ const Navbar = () => {
             return (
               <li key={index} className="w-full flex justify-center py-1">
                 <Link
+                  title={item.title}
                   href={item.path}
                   className={`w-full flex justify-center items-center px-2 py-2 hover:bg-primary-soft rounded-full transition-colors duration-300
                   ${isActive ? "text-primary" : ""}
