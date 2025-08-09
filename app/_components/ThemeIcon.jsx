@@ -14,6 +14,7 @@ const ThemeIcon = () => {
 
   return (
     <div
+      title="Toggle Theme"
       onClick={handleToggle}
       className="cursor-pointer transition-all duration-300 ease-in-out hover:scale-110 relative w-5 h-5"
     >

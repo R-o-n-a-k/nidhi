@@ -1,21 +1,70 @@
-import React from "react";
-
-const Loader = () => {
+export default function Loader() {
   return (
-    <>
-      <div className="flex items-center justify-center h-screen w-full ">
-        {["L", "O", "A", "D", "I", "N", "G"].map((letter, index) => (
-          <div
-            key={index}
-            className="inline-block mx-[5px] text-[40px] font-medium text-primary animate-rotate-x"
-            style={{ animationDelay: `${index * 0.1}s` }}
-          >
-            {letter}
-          </div>
-        ))}
-      </div>
-    </>
-  );
-};
+    <div className="flex items-center justify-center h-screen w-full">
+      <div className="loader"></div>
+      <style>{`
+        @layer utilities {
+          .loader {
+            animation: rotate 1s infinite;
+            height: 50px;
+            width: 50px;
+          }
+          .loader::before,
+          .loader::after {
+            content: "";
+            display: block;
+            height: 20px;
+            width: 20px;
+          }
+          .loader::before {
+            animation: box1 1s infinite;
+            background-color: #b8d0d5;
+            box-shadow: 30px 0 0 #008080;
+            margin-bottom: 10px;
+          }
+          .loader::after {
+            animation: box2 1s infinite;
+            background-color: #008080;
+            box-shadow: 30px 0 0 #b8d0d5;
+          }
 
-export default Loader;
+          @keyframes rotate {
+            0% { transform: rotate(0deg) scale(0.8) }
+            50% { transform: rotate(360deg) scale(1.2) }
+            100% { transform: rotate(720deg) scale(0.8) }
+          }
+
+          @keyframes box1 {
+            0% {
+              box-shadow: 30px 0 0 #008080;
+            }
+            50% {
+              box-shadow: 0 0 0 #008080;
+              margin-bottom: 0;
+              transform: translate(15px, 15px);
+            }
+            100% {
+              box-shadow: 30px 0 0 #008080;
+              margin-bottom: 10px;
+            }
+          }
+
+          @keyframes box2 {
+            0% {
+              box-shadow: 30px 0 0 #b8d0d5;
+            }
+            50% {
+              box-shadow: 0 0 0 #b8d0d5;
+              margin-top: -20px;
+              transform: translate(15px, 15px);
+            }
+            100% {
+              box-shadow: 30px 0 0 #b8d0d5;
+              margin-top: 0;
+            }
+          }
+        }
+      `}</style>
+    </div>
+  );
+}

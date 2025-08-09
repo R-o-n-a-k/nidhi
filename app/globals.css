@@ -102,30 +102,28 @@ body {
 
 @layer components {
   .page {
-    @apply w-full md:w-[65%] mx-auto h-[82.2vh] p-4 md:p-4;
+    @apply w-full md:w-[65%] mx-auto h-full min-h-[82.2vh] py-2 px-4 md:px-2 md:py-4;
   }
 
   .home-introduction {
     @apply mb-12 italic text-lg md:text-2xl font-semibold text-content tracking-widest leading-tight text-shadow-lg
   }
 
+  .heading {
+    @apply text-xl md:text-2xl my-1 font-bold text-primary tracking-wider leading-relaxed text-shadow-lg dark:[text-shadow:_3px_3px_10px_#008080]
+  }
+
+  .highlight {
+    @apply bg-primary-soft px-0.5 font-medium italic
+    /* underline underline-offset-1 decoration-2 decoration-teal-400 dark:decoration-teal-500 */
+    ;
+  }
 
 }
 
 @layer utilities {
 
   /* -----------------Font Name------------------ */
-  /* .font-intro-name {
-    font-family: var(--font-rubik-vinyl), sans-serif;
-  } */
-
-  /* .font-intro-name {
-    font-family: var(--font-rampart-one), cursive;
-  } */
-
-  /* .font-intro-name {
-    font-family: var(--font-bungee-shade), sans-serif;
-  } */
 
   .font-intro-name {
     font-family: var(--font-doodle-shadow), cursive;
@@ -150,34 +148,6 @@ body {
     }
   }
 
-  /* --------------------Loader------------------- */
-
-  .animate-rotate-x {
-    animation: rotate-x 2s linear infinite;
-  }
-
-  @keyframes rotate-x {
-    0% {
-      transform: rotateX(0);
-    }
-
-    12.5% {
-      transform: rotateX(90deg);
-    }
-
-    25% {
-      transform: rotateX(180deg);
-    }
-
-    37.5% {
-      transform: rotateX(270deg);
-    }
-
-    50%,
-    100% {
-      transform: rotateX(360deg);
-    }
-  }
 
 
 }
