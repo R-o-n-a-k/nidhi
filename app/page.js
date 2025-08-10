@@ -31,18 +31,17 @@ export default function Home() {
           </div>
 
             {/* Content */}
-            <div className="text-center mt-6 md:mt-8">
-              <h1 className="text-[2.7rem] md:text-6xl font-bold text-primary font-intro-name tracking-widest leading-relaxed text-shadow-lg">
-                {introduction.name}
+          <div className="text-center mt-6 md:mt-8">
+        
+             <h1 className="uppercase text-[2.7rem] md:text-5xl font-bold text-primary tracking-widest leading-relaxed shadow-3d">
+              {introduction.name}
               </h1>
-            
-              {/* <h2 className="mb-12 italic text-lg md:text-2xl font-semibold text-content tracking-widest leading-tight text-shadow-lg">{introduction.designation}</h2> */}
-              
-                <WordRotate 
-                      words={introduction.designation}
-                      duration={1500} 
-                      className="home-introduction"
-                    />
+          
+              <WordRotate 
+                words={introduction.designation}
+                duration={1500} 
+                className="home-introduction"
+               />
 
               <a
                 href={introduction.resume} // <-- Update with your actual file path
@@ -52,8 +51,8 @@ export default function Home() {
                 Download CV
               </a>
 
-            </div>
-            </div>
+          </div>
+        </div>
       </div>
     </>
   );

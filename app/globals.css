@@ -106,28 +106,21 @@ body {
   }
 
   .home-introduction {
-    @apply mb-12 italic text-lg md:text-2xl font-semibold text-content tracking-widest leading-tight text-shadow-lg
+    @apply mb-12 italic text-lg md:text-2xl font-semibold text-content tracking-widest leading-tight text-shadow-lg;
   }
 
   .heading {
-    @apply text-xl md:text-2xl my-1 font-bold text-primary tracking-wider leading-relaxed text-shadow-lg dark:[text-shadow:_3px_3px_10px_#008080]
+    @apply text-xl md:text-2xl my-1 font-bold text-primary tracking-wider leading-relaxed text-shadow-lg dark:[text-shadow:_3px_3px_10px_#008080];
   }
 
   .highlight {
     @apply bg-primary-soft px-0.5 font-medium italic
-    /* underline underline-offset-1 decoration-2 decoration-teal-400 dark:decoration-teal-500 */
-    ;
+    /* @apply underline underline-offset-1 decoration-2 decoration-teal-400 dark:decoration-teal-500; */
   }
 
 }
 
 @layer utilities {
-
-  /* -----------------Font Name------------------ */
-
-  .font-intro-name {
-    font-family: var(--font-doodle-shadow), cursive;
-  }
 
   /* -----------------profile picture------------------ */
   .animate-morph {
@@ -148,6 +141,45 @@ body {
     }
   }
 
+  /* Home Introduction Shadow */
 
+  .shadow-3d {
+    text-shadow:
+      1px 0px 1px #ccc,
+      0px 1px 1px #eee,
+      2px 1px 1px #ccc,
+      1px 2px 1px #eee,
+      3px 2px 1px #ccc,
+      2px 3px 1px #eee,
+      4px 3px 1px #ccc,
+      3px 4px 1px #eee,
+      5px 4px 1px #ccc,
+      4px 5px 1px #eee,
+      6px 5px 1px #ccc,
+      5px 6px 1px #eee,
+      7px 6px 1px #ccc;
+  }
+
+  .dark .shadow-3d {
+    text-shadow:
+      1px 0px 1px #222,
+      0px 1px 1px #444,
+      2px 1px 1px #222,
+      1px 2px 1px #444,
+      3px 2px 1px #222,
+      2px 3px 1px #444,
+      4px 3px 1px #222,
+      3px 4px 1px #444,
+      5px 4px 1px #222,
+      4px 5px 1px #444,
+      6px 5px 1px #222,
+      5px 6px 1px #444,
+      7px 6px 1px #222;
+  }
+
+  .dark .shadow-custom {
+    box-shadow: 0 20px 25px -5px rgba(10, 10, 10, 0.9),
+      0 10px 10px -5px rgba(0, 0, 0, 0.95);
+  }
 
 }

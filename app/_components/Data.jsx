@@ -110,25 +110,7 @@ export const aboutPage = {
     " years of experience in SEO, social media, and content marketing.",
   ],
   aboutSecondpara: [
-    "I specialize in on-page, off-page and local ",
-    <span key="seo" className="highlight">
-      SEO
-    </span>,
-    ", ",
-    <span key="social" className="highlight">
-      social media strategy
-    </span>,
-    ", ",
-
-    <span key="content" className="highlight">
-      content creation
-    </span>,
-    " and ",
-
-    <span key="email" className="highlight">
-      email marketing
-    </span>,
-    ". I have a proven track record of helping brands enhance their online presence and achieve measurable marketing goals. ",
+    "I have a proven track record of helping brands enhance their online presence and achieve measurable marketing goals.",
     <span key="ai" className="highlight">
       AI marketing
     </span>,
