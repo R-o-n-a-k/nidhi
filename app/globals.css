@@ -114,8 +114,12 @@ body {
   }
 
   .highlight {
-    @apply bg-primary-soft px-0.5 font-medium italic
+    @apply bg-primary-soft px-1 font-medium italic rounded-md
     /* @apply underline underline-offset-1 decoration-2 decoration-teal-400 dark:decoration-teal-500; */
+  }
+
+  .carousel-btn {
+    @apply text-xl font-light md:text-4xl p-2 cursor-pointer bg-primary text-white hover:bg-primary-hover;
   }
 
 }

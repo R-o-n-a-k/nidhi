@@ -8,9 +8,7 @@ export default function ParticlesBackground() {
         window.particlesJS.load(
           "particles-js",
           "/particles-config.json",
-          () => {
-            console.log("✨ particles.js config loaded");
-          }
+          () => {}
         );
       }
     };
