@@ -118,7 +118,31 @@ export const aboutPage = {
   ],
 };
 
-// "I specialize in on-page, off-page, and local SEO, social media strategy, content creation, and email marketing. I work with tools like Google Search Console, Google Business, Canva, Figma, and basic video editing. Currently exploring AI in marketing, I’m transitioning into consulting and instruction to help brands and professionals grow.",
+// certification
+export const certifications = {
+  firstPara:
+    "Over the course of my career, I’ve earned certifications that strengthen my expertise in digital marketing, SEO and social media strategy.",
+  secondPara:
+    "Each certification reflects my commitment to staying ahead in an ever-evolving digital landscape and delivering impactful, results-oriented strategies for brands.",
+};
+
+export const certificatesDetail = [
+  {
+    id: 1,
+    title: "SEO",
+    image: "/images/certificates/seo.webp",
+  },
+  {
+    id: 2,
+    title: "Social Media",
+    image: "/images/certificates/socialMedia.webp",
+  },
+  {
+    id: 3,
+    title: "Linkedin Marketing Strategy",
+    image: "/images/certificates/linkedinMarketingStrategy.webp",
+  },
+];
 
 /* -------------------------------------------------------------------------- */
 /*                                    Career                                   */
@@ -144,15 +168,15 @@ export const workData = [
       "Conducted SEO audits and refined lead generation strategies with the senior consultant.",
       [
         <span key="ThreejsDevelopers" className="highlight">
-          ThreejsDevelopers:
+          ThreejsDevelopers
         </span>,
-        " Created & scheduled content for to showcase 3D development services, maintaining brand presence on LinkedIn, Facebook, and Instagram.",
+        ": Created & scheduled content for to showcase 3D development services, maintaining brand presence on LinkedIn, Facebook, and Instagram.",
       ],
       [
         <span key="DecentraBlock" className="highlight">
-          DecentraBlock:
+          DecentraBlock
         </span>,
-        " Built a tailored content calendar for targeting B2B blockchain audiences.",
+        ": Built a tailored content calendar for targeting B2B blockchain audiences.",
       ],
     ],
   },
@@ -168,15 +192,15 @@ export const workData = [
       "Produced YouTube videos and organized community events to expand audience reach.",
       [
         <span key="project1" className="highlight">
-          Key Project: Pyx IT Academy (Local SEO):-
+          Key Project: Pyx IT Academy (Local SEO)
         </span>,
-        " Achieved Top 3 Google ranking by optimizing Google Business Profile, targeting local keywords, and enhancing citations—driving visibility, engagement, and monthly organic visits.",
+        ":- Achieved Top 3 Google ranking by optimizing Google Business Profile, targeting local keywords, and enhancing citations—driving visibility, engagement, and monthly organic visits.",
       ],
       [
         <span key="project2" className="highlight">
-          Key Project: Jawed Habib (Website SEO):-
+          Key Project: Jawed Habib (Website SEO)
         </span>,
-        " Boosted keyword rankings and organic traffic through strategic on-page and off-page SEO, improving site visibility and showcasing strong analytical skills.",
+        ":- Boosted keyword rankings and organic traffic through strategic on-page and off-page SEO, improving site visibility and showcasing strong analytical skills.",
       ],
     ],
   },
