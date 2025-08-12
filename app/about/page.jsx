@@ -4,6 +4,7 @@ import {
   certificatesDetail,
 } from "@/_components/Data.jsx";
 import Carousel from "@/_components/Carousel";
+import Image from "next/image";
 
 const about = () => {
   return (
@@ -35,11 +36,21 @@ const about = () => {
                   key={certificate.id}
                   className="relative w-full h-[240px] md:h-[340px] group flex-shrink-0"
                 >
-                  <img
+                  {/* <img
                     src={certificate.image}
                     alt={certificate.title}
                     className="w-full h-full object-fill"
+                  /> */}
+                  <Image
+                    src={certificate.image}
+                    alt={certificate.title}
+                    width={250}
+                    height={250}
+                    className="w-full h-full object-fill"
+                    placeholder="blur"
+                    blurDataURL=" "
                   />
+
                   <div
                     className="absolute flex items-center justify-center inset-0 bg-black/50 backdrop-blur-xs
                   opacity-0 group-hover:opacity-100 transition-opacity duration-300"
