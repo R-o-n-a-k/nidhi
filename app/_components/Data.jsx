@@ -1,11 +1,9 @@
 import {
   FaBriefcase,
   FaGraduationCap,
-  // FaLinkedin,
-  // FaGithub,
-  // FaEnvelope,
-  // FaPhoneAlt,
-  // FaMapMarkerAlt,
+  FaLinkedin,
+  FaEnvelope,
+  FaMapMarkerAlt,
 } from "react-icons/fa";
 /* -------------------------------------------------------------------------- */
 /*                                  MetaData                                  */
@@ -226,5 +224,25 @@ export const educationData = [
     icon: <FaGraduationCap />,
     description:
       "Studied core CS subjects and specialized in digital marketing.",
+  },
+];
+
+/* -------------------------------------------------------------------------- */
+/*                                    Contact                                   */
+/* -------------------------------------------------------------------------- */
+
+export const contactInfo = [
+  {
+    icon: <FaLinkedin />,
+    name: "in/nidhi-m-patel",
+    link: "https://www.linkedin.com/in/nidhi-m-patel/",
+  },
+  {
+    icon: <FaEnvelope />,
+    name: "nidhipatel2265@gmail.com",
+  },
+  {
+    icon: <FaMapMarkerAlt />,
+    name: "Ahmedabad, India",
   },
 ];
