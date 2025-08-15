@@ -148,27 +148,21 @@ export const workData = [
     date: "Nov 2024 – Feb 2025",
     icon: <FaBriefcase />,
     description: [
-      [
-        "Led digital marketing for Codiste and its subsidiaries ",
-        <span key="subsidiaries" className="highlight">
-          (ThreejsDevelopers and DecentraBlock)
-        </span>,
-        " in the 3D technology and blockchain sectors.",
-      ],
-      "Managed LinkedIn & Instagram strategy, content, and creatives in collaboration with designers.",
-      "Created SEO-optimized blogs, newsletters, and videos to drive engagement and leads.",
-      "Conducted SEO audits and refined lead generation strategies with the senior consultant.",
+      "Managed SEO initiatives, including keyword research, content optimization, and on-page improvements.",
+      "Coordinated social media content creation and publishing for brand engagement.",
+      "Collaborated with cross-functional teams to align marketing strategies with project goals.",
+      "Adapted quickly to new workflows and tools to meet tight deadlines for deliverables.",
       [
         <span key="ThreejsDevelopers" className="highlight">
           ThreejsDevelopers
         </span>,
-        ": Created & scheduled content for to showcase 3D development services, maintaining brand presence on LinkedIn, Facebook, and Instagram.",
+        ": Created & scheduled content to maintain brand presence on LinkedIn, Facebook, and Instagram.",
       ],
       [
         <span key="DecentraBlock" className="highlight">
           DecentraBlock
         </span>,
-        ": Built a tailored content calendar for targeting B2B blockchain audiences.",
+        ": Planned and published posts to keep brand active on LinkedIn, Facebook, and Instagram.",
       ],
     ],
   },
@@ -179,21 +173,10 @@ export const workData = [
     date: "May 2024 – Oct 2024",
     icon: <FaBriefcase />,
     description: [
-      "Led SEO projects boosting organic traffic by 55% and improving search rankings, driving higher engagement.",
-      "Managed and grew presence across multiple social platforms, collaborating with developers to enhance content and user experience.",
-      "Produced YouTube videos and organized community events to expand audience reach.",
-      [
-        <span key="project1" className="highlight">
-          Key Project: Pyx IT Academy (Local SEO)
-        </span>,
-        ":- Achieved Top 3 Google ranking by optimizing Google Business Profile, targeting local keywords, and enhancing citations—driving visibility, engagement, and monthly organic visits.",
-      ],
-      [
-        <span key="project2" className="highlight">
-          Key Project: Jawed Habib (Website SEO)
-        </span>,
-        ":- Boosted keyword rankings and organic traffic through strategic on-page and off-page SEO, improving site visibility and showcasing strong analytical skills.",
-      ],
+      "Led SEO campaigns that increased organic traffic and improved search rankings for key terms.",
+      "Managed and expanded brand presence across social platforms, ensuring consistent engagement.",
+      "Collaborated with developers to enhance content quality and overall user experience.",
+      "Produced YouTube videos and organized community events to grow and engage the audience.",
     ],
   },
   {
@@ -204,7 +187,7 @@ export const workData = [
     icon: <FaBriefcase />,
     description: [
       "Published 60+ SEO-optimized blogs with keyword research and on-page SEO, boosting rankings and visibility.",
-      "Managed social media strategy and designed graphics, increasing reach by 30% in two months.",
+      "Managed social media strategy and designed graphics, increasing reach in two months.",
     ],
   },
 ];
@@ -216,8 +199,6 @@ export const educationData = [
     location: "Ahmedabad, India",
     date: "2019 –2022",
     icon: <FaGraduationCap />,
-    description:
-      "Studied core CS subjects and specialized in digital marketing.",
   },
 ];
 

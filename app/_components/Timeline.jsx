@@ -35,9 +35,7 @@ const Timeline = ({ data, heading = "Timeline" }) => {
                     ))}
                   </ul>
                 ) : (
-                  <p className="space-y-0.5 w-full text-justify text-sm md:text-base text-content pl-4 relative">
-                    {item.description}
-                  </p>
+                  ""
                 )}
               </li>
             ))}
