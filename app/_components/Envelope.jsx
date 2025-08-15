@@ -1,8 +1,38 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { FaXmark } from "react-icons/fa6";
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast, Bounce } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Envelope = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+    const serviceKey = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+    const formPublicKey = process.env.NEXT_PUBLIC_EMAILJS_USER_ID;
+
+    e.preventDefault();
+    const confirmSend = window.confirm("Are you sure you want to send?");
+    if (confirmSend) {
+      emailjs
+        .sendForm(serviceKey, templateId, form.current, {
+          publicKey: formPublicKey,
+        })
+        .then(
+          () => {
+            toast.success("The form was submitted successfully");
+          },
+          (error) => {
+            console.error("Error:", error.text);
+            toast.error("❌ Failed to send. Please try again.");
+          }
+        );
+      e.target.reset();
+    }
+  };
+
   const [isOpen, setIsOpen] = useState(false);
   const [hasInteracted, setHasInteracted] = useState(false);
 
@@ -30,7 +60,7 @@ const Envelope = () => {
         className={`relative top-5 md:top-8 w-[95%] h-[210px] md:w-[580px] md:h-[300px] mx-auto bg-[#fbfbfb] shadow-2xl shadow-custom transition ease-in-out duration-[2000ms] delay-[1500ms] z-20 
         ${hasInteracted ? (isOpen ? "pull" : "push") : ""}`}
       >
-        <form>
+        <form ref={form} onSubmit={sendEmail}>
           <div className="font-medium">
             <input
               type="text"
@@ -144,6 +174,20 @@ const Envelope = () => {
           <FaXmark className="text-lg md:text-xl" />
         </button>
       )}
+      <ToastContainer
+        position="top-right"
+        autoClose={2000}
+        limit={1}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+        transition={Bounce}
+      />
     </div>
   );
 };

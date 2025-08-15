@@ -28,7 +28,7 @@ const about = () => {
           <br />
           <p>{certifications.secondPara}</p>
         </div>
-        <div className="mt-8 md:-mt-1 relative before:w-[90%] md:before:w-full before:h-full before:absolute before:content-[''] before:border-[6px] before:border-primary before:-top-6 before:-left-[4px] md:before:-top-6 md:before:-left-6 before:rounded-lg">
+        <div className="mt-8 relative before:w-[90%] md:before:w-full before:h-full before:absolute before:content-[''] before:border-[6px] before:border-primary before:-top-6 before:-left-[4px] md:before:-top-6 md:before:-left-6 before:rounded-lg">
           <Carousel>
             {certificatesDetail.map((certificate) => {
               return (
