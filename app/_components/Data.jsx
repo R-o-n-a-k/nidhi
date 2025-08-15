@@ -78,13 +78,11 @@ export const metaDataContent = {
 export const introduction = {
   image: "/nidhi.webp",
   name: "Nidhi Patel",
-  // designation: "Digital Marketing Executive",
   designation: [
-    "Digital Marketing Executive",
-    "SEO Expert",
-    "Social Media Strategist",
-    "Content Marketing",
-    "AI Marketing",
+    "Digital Marketer",
+    "SEO & Social Media Executive",
+    "Creative Content Strategist",
+    "AI Marketing Explorer",
   ],
   location: "Ahmedabad, India",
   resume: "/NidhiPatel_MarketingExecutive_Resume.pdf",
@@ -97,22 +95,18 @@ export const introduction = {
 export const aboutPage = {
   title: "About",
   aboutFirstpara: [
-    "👋 Hi, I am ",
-    <span key="n" className="highlight">
-      Nidhi Patel
+    "👋 Hi, I’m Nidhi, a ",
+    <span key="desig" className="highlight">
+      Digital Marketer
     </span>,
-    ", a results-driven digital marketer with ",
+    " with over ",
     <span key="yrs" className="highlight">
-      1.5+
+      1.5
     </span>,
-    " years of experience in SEO, social media, and content marketing.",
+    " years of experience giving algorithms something to talk about.",
   ],
   aboutSecondpara: [
-    "I have a proven track record of helping brands enhance their online presence and achieve measurable marketing goals.",
-    <span key="ai" className="highlight">
-      AI marketing
-    </span>,
-    ", I am transitioning into consulting and instruction to help brands and professionals grow.",
+    "I blend SEO, analytics, and brand development to craft strategies that get brands seen and remembered. Lately, I’ve been diving into AI marketing to create smarter campaigns that save time and deliver real results.",
   ],
 };
 
