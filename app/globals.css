@@ -110,7 +110,7 @@ body {
   }
 
   .heading {
-    @apply text-2xl md:text-3xl my-1 font-bold text-primary tracking-wider leading-relaxed text-shadow-lg dark:[text-shadow:_3px_3px_10px_#008080];
+    @apply text-2xl md:text-3xl my-1 font-bold text-primary tracking-wider leading-relaxed text-shadow-lg dark:[text-shadow:_2px_2px_7px_#008080];
   }
 
   .highlight {
