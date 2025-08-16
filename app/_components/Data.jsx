@@ -31,6 +31,9 @@ export const metaDataContent = {
   },
   description:
     "Digital Marketing Specialist with 1.5+ years' experience in SEO, social media, and content strategy for organic growth and brand visibility.",
+  verification: {
+    google: "oPfZV3uf-uIZFjb9diMT7grDKNexLvs_0UBN3Iy5adg", // the code from <meta name="google-site-verification" content="xxxx" />
+  },
   keywords: [
     "Nidhi Patel",
     "Digital Marketing Specialist",
@@ -82,7 +85,7 @@ export const metaDataContent = {
     images: ["/nidhi.webp"],
   },
   alternates: {
-    canonical: "https://patelnidhi.vercel.app/",
+    canonical: "https://wwwpatelnidhi.vercel.app/",
   },
 };
 
