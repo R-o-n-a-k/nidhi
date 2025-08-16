@@ -4,7 +4,22 @@ import {
   FaLinkedin,
   FaEnvelope,
   FaMapMarkerAlt,
+  FaClipboardList,
+  FaChartLine,
+  FaGoogle,
 } from "react-icons/fa";
+import { SiCanva } from "react-icons/si";
+import { MdManageSearch } from "react-icons/md";
+import {
+  FaMagnifyingGlassChart,
+  FaShareNodes,
+  FaUserGear,
+  FaFigma,
+  FaClapperboard,
+  FaEnvelopeOpenText,
+  FaBusinessTime,
+} from "react-icons/fa6";
+
 /* -------------------------------------------------------------------------- */
 /*                                  MetaData                                  */
 /* -------------------------------------------------------------------------- */
@@ -109,6 +124,70 @@ export const aboutPage = {
     "I blend SEO, analytics, and brand development to craft strategies that get brands seen and remembered. Lately, I’ve been diving into AI marketing to create smarter campaigns that save time and deliver real results.",
   ],
 };
+
+// Skills
+export const skills = [
+  {
+    id: 1,
+    name: "SEO",
+    icon: <FaMagnifyingGlassChart />,
+  },
+  {
+    id: 2,
+    name: "Social Media Marketing",
+    icon: <FaShareNodes />,
+  },
+  {
+    id: 3,
+    name: "Content Strategist",
+    icon: <FaClipboardList />,
+  },
+  {
+    id: 4,
+    name: "Keyword Research",
+    icon: <MdManageSearch />,
+  },
+  {
+    id: 5,
+    name: "Performance Analytics",
+    icon: <FaChartLine />,
+  },
+  {
+    id: 6,
+    name: "Google Search Console ",
+    icon: <FaGoogle />,
+  },
+  {
+    id: 7,
+    name: " Google Business",
+    icon: <FaBusinessTime />,
+  },
+  {
+    id: 8,
+    name: "Profile Optimization",
+    icon: <FaUserGear />,
+  },
+  {
+    id: 9,
+    name: "Canva",
+    icon: <SiCanva />,
+  },
+  {
+    id: 10,
+    name: "Figma",
+    icon: <FaFigma />,
+  },
+  {
+    id: 11,
+    name: "Video Editing",
+    icon: <FaClapperboard />,
+  },
+  {
+    id: 12,
+    name: "Email Marketing & Newsletter",
+    icon: <FaEnvelopeOpenText />,
+  },
+];
 
 // certification
 export const certifications = {
