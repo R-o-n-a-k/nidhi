@@ -1,24 +1,22 @@
 import {
-  FaBriefcase,
-  FaGraduationCap,
-  FaLinkedin,
-  FaEnvelope,
-  FaMapMarkerAlt,
-  FaClipboardList,
-  FaChartLine,
-  FaGoogle,
-} from "react-icons/fa";
-import { SiCanva } from "react-icons/si";
-import { MdManageSearch } from "react-icons/md";
-import {
-  FaMagnifyingGlassChart,
-  FaShareNodes,
-  FaUserGear,
-  FaFigma,
-  FaClapperboard,
-  FaEnvelopeOpenText,
-  FaBusinessTime,
-} from "react-icons/fa6";
+  BriefcaseBusiness, // FaBriefcase
+  GraduationCap, // FaGraduationCap
+  Network, // FaLinkedin → (connections / people)
+  Mail, // FaEnvelope
+  MapPin, // FaMapMarkerAlt
+  ClipboardList, // FaClipboardList
+  TrendingUp, // FaChartLine
+  Globe, // FaGoogle → (global/search)
+  Palette, // SiCanva → (design/creative)
+  SearchCheck, // MdManageSearch
+  Search, // FaMagnifyingGlassChart
+  Share2, // FaShareNodes
+  UserCog, // FaUserGear
+  PenTool, // FaFigma → (design tool)
+  Clapperboard, // FaClapperboard
+  MailCheck, // FaEnvelopeOpenText
+  Building2, // FaBusinessTime
+} from "lucide-react";
 
 /* -------------------------------------------------------------------------- */
 /*                                  MetaData                                  */
@@ -133,62 +131,62 @@ export const skills = [
   {
     id: 1,
     name: "SEO",
-    icon: <FaMagnifyingGlassChart />,
+    icon: Search,
   },
   {
     id: 2,
     name: "Social Media Marketing",
-    icon: <FaShareNodes />,
+    icon: Share2,
   },
   {
     id: 3,
     name: "Content Strategist",
-    icon: <FaClipboardList />,
+    icon: ClipboardList,
   },
   {
     id: 4,
     name: "Keyword Research",
-    icon: <MdManageSearch />,
+    icon: SearchCheck,
   },
   {
     id: 5,
     name: "Performance Analytics",
-    icon: <FaChartLine />,
+    icon: TrendingUp,
   },
   {
     id: 6,
     name: "Google Search Console ",
-    icon: <FaGoogle />,
+    icon: Globe,
   },
   {
     id: 7,
     name: " Google Business",
-    icon: <FaBusinessTime />,
+    icon: Building2,
   },
   {
     id: 8,
     name: "Profile Optimization",
-    icon: <FaUserGear />,
+    icon: UserCog,
   },
   {
     id: 9,
     name: "Canva",
-    icon: <SiCanva />,
+    icon: Palette,
   },
   {
     id: 10,
     name: "Figma",
-    icon: <FaFigma />,
+    icon: PenTool,
   },
   {
     id: 11,
     name: "Video Editing",
-    icon: <FaClapperboard />,
+    icon: Clapperboard,
   },
   {
     id: 12,
     name: "Email Marketing & Newsletter",
-    icon: <FaEnvelopeOpenText />,
+    icon: MailCheck,
   },
 ];
 
@@ -228,7 +226,7 @@ export const workData = [
     company: "Codiste",
     location: "Ahmedabad, India",
     date: "Nov 2024 – Feb 2025",
-    icon: <FaBriefcase />,
+    icon: BriefcaseBusiness,
     description: [
       "Managed SEO initiatives, including keyword research, content optimization, and on-page improvements.",
       "Coordinated social media content creation and publishing for brand engagement.",
@@ -253,7 +251,7 @@ export const workData = [
     company: "Kpyxal Solutions LLP",
     location: "Ahmedabad, India",
     date: "May 2024 – Oct 2024",
-    icon: <FaBriefcase />,
+    icon: BriefcaseBusiness,
     description: [
       "Led SEO campaigns that increased organic traffic and improved search rankings for key terms.",
       "Managed and expanded brand presence across social platforms, ensuring consistent engagement.",
@@ -266,7 +264,7 @@ export const workData = [
     company: "Kpyxal Solutions LLP",
     location: "Ahmedabad, India",
     date: "Feb 2024 – April 2024",
-    icon: <FaBriefcase />,
+    icon: BriefcaseBusiness,
     description: [
       "Published 60+ SEO-optimized blogs with keyword research and on-page SEO, boosting rankings and visibility.",
       "Managed social media strategy and designed graphics, increasing reach in two months.",
@@ -280,7 +278,7 @@ export const educationData = [
     company: "University of Gujarat",
     location: "Ahmedabad, India",
     date: "2019 –2022",
-    icon: <FaGraduationCap />,
+    icon: GraduationCap,
   },
 ];
 
@@ -290,16 +288,16 @@ export const educationData = [
 
 export const contactInfo = [
   {
-    icon: <FaLinkedin />,
+    icon: Network,
     name: "in/nidhi-m-patel",
     link: "https://www.linkedin.com/in/nidhi-m-patel/",
   },
   {
-    icon: <FaEnvelope />,
+    icon: Mail,
     name: "nidhipatel2265@gmail.com",
   },
   {
-    icon: <FaMapMarkerAlt />,
+    icon: MapPin,
     name: "Ahmedabad, India",
   },
 ];

@@ -25,7 +25,7 @@ const about = () => {
           const isDesktopCol = (i + 1) % 4 === 0; // last col in 4-col grid
           const isLastRowMobile = i >= 9; // last 3 items (row 4 of 3x4)
           const isLastRowDesktop = i >= 8; // last 4 items (row 3 of 4x3)
-
+          const Icon = skill.icon;
           return (
             <div
               key={skill.id}
@@ -36,7 +36,8 @@ const about = () => {
           ${!isLastRowDesktop ? "md:border-b" : ""}`}
             >
               <span className="text-base md:text-lg mr-2 md:mr-4 text-primary">
-                {skill.icon}
+                {/* {skill.icon} */}
+                <Icon className="icon-size" />
               </span>
               <h2 className="text-[10px] md:text-sm font-medium text-content">
                 {skill.name}

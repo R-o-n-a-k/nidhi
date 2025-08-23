@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useRef } from "react";
-import { FaXmark } from "react-icons/fa6";
+import { X, SendHorizontal } from "lucide-react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast, Bounce } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -171,7 +171,7 @@ const Envelope = () => {
           className="absolute cursor-pointer -bottom-10 left-1/2 -translate-x-1/2 flex items-center gap-1 text-amber-400 dark:text-[#FFE28A] hover:text-amber-600 dark:hover:text-amber-300 text-sm md:text-base font-medium  transition-colors hover:scale-105 duration-300"
         >
           Close Envelope
-          <FaXmark className="text-lg md:text-xl" />
+          <X className="icon-size" />
         </button>
       )}
       <ToastContainer

@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const Carousel = ({ children: certificates }) => {
   const [curr, setCurr] = useState(0);
@@ -21,10 +21,10 @@ const Carousel = ({ children: certificates }) => {
       </div>
       <div className="flex flex-col absolute right-0 bottom-0">
         <button onClick={prev} className="carousel-btn rounded-tl-lg">
-          <FaChevronLeft />
+          <ChevronLeft />
         </button>
         <button onClick={next} className="carousel-btn">
-          <FaChevronRight />
+          <ChevronRight />
         </button>
       </div>
     </div>
