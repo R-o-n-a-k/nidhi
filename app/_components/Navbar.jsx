@@ -4,23 +4,35 @@ import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
-  FaUser,
-  FaFolderOpen,
-  FaBriefcase,
-  FaEnvelope,
-  FaHome,
-} from "react-icons/fa";
+  User, // FaUser
+  FolderOpen, // FaFolderOpen
+  BriefcaseBusiness, // FaBriefcase
+  Mail, // FaEnvelope
+  Home, // FaHome
+} from "lucide-react";
 import ThemeIcon from "./ThemeIcon";
 
 const Navbar = () => {
   const pathname = usePathname();
 
   const navData = [
-    { icon: <FaHome />, path: "/", title: "Home" },
-    { icon: <FaUser />, path: "/about", title: "About" },
-    { icon: <FaBriefcase />, path: "/career", title: "Career" },
-    { icon: <FaFolderOpen />, path: "/project", title: "Projects" },
-    { icon: <FaEnvelope />, path: "/contact", title: "Contact" },
+    { icon: <Home className="icon-size" />, path: "/", title: "Home" },
+    { icon: <User className="icon-size" />, path: "/about", title: "About" },
+    {
+      icon: <BriefcaseBusiness className="icon-size" />,
+      path: "/career",
+      title: "Career",
+    },
+    {
+      icon: <FolderOpen className="icon-size" />,
+      path: "/project",
+      title: "Projects",
+    },
+    {
+      icon: <Mail className="icon-size" />,
+      path: "/contact",
+      title: "Contact",
+    },
   ];
 
   return (

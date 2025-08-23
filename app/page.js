@@ -2,7 +2,7 @@ import {introduction} from "@/_components/Data.jsx";
 import Image from 'next/image'
 import ParticlesBackground from "./_components/ParticlesBackground";
 import WordRotate from "./_animations/WordRotate"; 
-import { FaAngleDoubleDown } from "react-icons/fa";
+import { ChevronsDown } from "lucide-react";
 
 export default function Home() {
   return (
@@ -52,7 +52,7 @@ export default function Home() {
                 className="cursor-pointer relative inline-flex items-center gap-2 py-2 px-6 text-white text-base font-medium overflow-hidden bg-primary border-2 border-primary rounded-full transition-all duration-400 ease-in-out shadow-md hover:scale-105 hover:text-primary hover:shadow-lg active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-background before:to-background before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-full hover:before:left-0"
               >
                 Download CV
-                 <FaAngleDoubleDown className="animate-bounce font-bold" />
+                 <ChevronsDown className="animate-bounce icon-size" />
               </a>
 
           </div>

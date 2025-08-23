@@ -1,6 +1,6 @@
 "use client";
 import { useTheme } from "next-themes";
-import { FaSun, FaMoon } from "react-icons/fa";
+import { Sun, Moon } from "lucide-react";
 
 const ThemeIcon = () => {
   const { theme, setTheme } = useTheme();
@@ -18,8 +18,8 @@ const ThemeIcon = () => {
       onClick={handleToggle}
       className="cursor-pointer transition-all duration-300 ease-in-out hover:scale-110 relative w-5 h-5"
     >
-      <FaSun className="theme-icon hidden dark:block text-[#FFE28A]" />
-      <FaMoon className="theme-icon block dark:hidden text-[#CDCDCD]" />
+      <Sun className="icon-size hidden dark:block text-[#FFE28A]" />
+      <Moon className="icon-size block dark:hidden text-[#CDCDCD]" />
     </div>
   );
 };

@@ -109,6 +109,10 @@ body {
     @apply mb-12 italic text-lg md:text-2xl font-semibold text-content tracking-widest leading-tight text-shadow-lg;
   }
 
+  .icon-size {
+    @apply w-[18px] h-[18px] md:w-5 md:h-5;
+  }
+
   .heading {
     @apply text-2xl md:text-3xl my-1 font-bold text-primary tracking-wider leading-relaxed text-shadow-lg dark:[text-shadow:_2px_2px_7px_#008080];
   }
