@@ -1,6 +1,6 @@
 "use client";
-import React, { useState, useRef } from "react";
-import { X, SendHorizontal } from "lucide-react";
+import { useState, useRef } from "react";
+import { X } from "lucide-react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast, Bounce } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
