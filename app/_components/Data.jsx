@@ -83,7 +83,7 @@ export const metaDataContent = {
     images: ["/nidhi.webp"],
   },
   alternates: {
-    canonical: "https://wwwpatelnidhi.vercel.app/",
+    canonical: "https://patelnidhi.vercel.app/",
   },
 };
 

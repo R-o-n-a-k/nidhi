@@ -1,4 +1,4 @@
-import { Poppins, Rubik_Doodle_Shadow } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 import "./globals.css";
 import Navbar from "@/_components/Navbar";
 import Footer from "@/_components/Footer";
@@ -14,13 +14,6 @@ const poppins = Poppins({
   variable: '--font-poppins', // optional, for Tailwind use
 })
 
-const rubikDoodleShadow = Rubik_Doodle_Shadow({
-  subsets: ['latin'],
-  weight: '400', // only available weight
-  display: 'swap',
-  variable: '--font-doodle-shadow',
-});
-
 export const metadata = {
   ...metaDataContent,
   metadataBase: new URL(metaDataContent.metadataBase),
@@ -30,7 +23,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-      //  className={poppins.className}
        className={`${poppins.variable}`}
        >
         <Script

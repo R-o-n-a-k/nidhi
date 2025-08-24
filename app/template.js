@@ -28,7 +28,7 @@ export default function Template ({children} ){
             key={pathname}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ ease: "easeInOut", duration: .5, delay: 0.5 }}
+            transition={{ ease: "easeInOut", duration: .7, delay: 0.5 }}
             >
             {children}
             </motion.div>
