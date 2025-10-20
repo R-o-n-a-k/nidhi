@@ -6,7 +6,7 @@ export default function Template ({children} ){
       const pathname = usePathname();
     return(
        
-        <AnimatePresence mode="wait">
+        <AnimatePresence>
 
             <motion.div key="div1" className='fixed top-0 bottom-0 right-full w-screen h-screen z-140 bg-primary'
                 initial={{x:"100%",width:"100%"}}
