@@ -39,7 +39,7 @@ const Timeline = ({ data, heading = "Timeline" }) => {
                           {item.description.map((point, i) => (
                             <li
                               key={i}
-                              className="relative before:content-['-'] before:absolute before:-left-4"
+                              className="relative before:content-['-'] before:absolute md:before:-left-4 before:-left-2"
                             >
                               {point}
                             </li>
