@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "tw-animate-css";
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
@@ -24,7 +25,6 @@
   --color-accent: #F05D5E;
   --color-accent-hover: #D94F51;
   --color-accent-soft: #ffe5e5;
-
 
   /* 🧱 Borders / Dividers */
   --color-border: #e5e7eb;
@@ -98,7 +98,6 @@ body {
   cursor: pointer;
   background-color: var(--color-primary-hover);
 }
-
 
 @layer components {
   .page {
@@ -176,7 +175,6 @@ body {
   .animate-slowping {
     animation: slowping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
   }
-
 
   /* Home Introduction Shadow */
 

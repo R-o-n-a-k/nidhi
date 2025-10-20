@@ -279,6 +279,9 @@ export const educationData = [
     location: "Ahmedabad, India",
     date: "2019 –2022",
     icon: GraduationCap,
+    description: [
+      "Completed BCA at University of Gujarat, building a strong foundation in digital marketing, analytics, and content strategy.",
+    ],
   },
 ];
 
