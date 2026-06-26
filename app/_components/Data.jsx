@@ -79,7 +79,7 @@ export const metaDataContent = {
     card: "summary_large_image",
     title: "Nidhi Patel | Digital Marketing Specialist",
     description:
-      "Empowering brands with smart SEO, social media, and AI-powered digital strategies. 1.5+ years of results-driven marketing.",
+      "Empowering brands with smart SEO, social media, and AI-powered digital strategies. 1.3+ years of results-driven marketing.",
     images: ["/nidhi.webp"],
   },
   alternates: {
@@ -117,7 +117,7 @@ export const aboutPage = {
     </span>,
     " with over ",
     <span key="yrs" className="highlight">
-      1.5
+      1.3
     </span>,
     " years of experience giving algorithms something to talk about.",
   ],

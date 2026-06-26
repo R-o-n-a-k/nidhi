@@ -4,7 +4,7 @@
 
 ## 🚀 Overview
 
-Hi, I'm **Nidhi Patel**, a results-driven digital marketer with 1.5+ years of experience in SEO, social media, and content marketing. This portfolio highlights my career, projects, and development skills for digital marketing.
+Hi, I'm **Nidhi Patel**, a results-driven digital marketer with 1.3+ years of experience in SEO, social media, and content marketing. This portfolio highlights my career, projects, and development skills for digital marketing.
 
 ### 🌟 Key Features
 
