@@ -28,7 +28,7 @@ export const metaDataContent = {
     template: "%s | Nidhi Patel",
   },
   description:
-    "Digital Marketing Specialist with 1.5+ years' experience in SEO, social media, and content strategy for organic growth and brand visibility.",
+    "Digital Marketing Specialist with 1.3+ years' experience in SEO, social media, and content strategy for organic growth and brand visibility.",
   verification: {
     google: "oPfZV3uf-uIZFjb9diMT7grDKNexLvs_0UBN3Iy5adg", // the code from <meta name="google-site-verification" content="xxxx" />
   },
@@ -292,8 +292,8 @@ export const educationData = [
 export const contactInfo = [
   {
     icon: Network,
-    name: "in/nidhi-m-patel",
-    link: "https://www.linkedin.com/in/nidhi-m-patel/",
+    name: "in/nidhi-m-patel-seo",
+    link: "https://www.linkedin.com/in/nidhi-m-patel-seo/",
   },
   {
     icon: Mail,

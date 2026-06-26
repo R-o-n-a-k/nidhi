@@ -40,7 +40,7 @@ const StructuredData = () => {
       "Marketing Tools 2025",
     ],
     description:
-      "Digital Marketing Specialist with 1.5+ years' experience in SEO, social media, and content strategy for organic growth and brand visibility.",
+      "Digital Marketing Specialist with 1.3+ years' experience in SEO, social media, and content strategy for organic growth and brand visibility.",
   };
 
   return (
