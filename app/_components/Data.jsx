@@ -101,7 +101,7 @@ export const introduction = {
     "AI Marketing Explorer",
   ],
   location: "Ahmedabad, India",
-  resume: "/NidhiPatel_MarketingExecutive_Resume.pdf",
+  resume: "/Nidhi_Patel_Digital_Marketing_Executive.pdf",
 };
 
 /* -------------------------------------------------------------------------- */
