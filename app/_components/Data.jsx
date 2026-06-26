@@ -15,7 +15,10 @@ import {
   PenTool, // FaFigma → (design tool)
   Clapperboard, // FaClapperboard
   MailCheck, // FaEnvelopeOpenText
-  Building2, // FaBusinessTime
+  Building2,
+  ChartColumn,
+  ScanSearch,
+  ScanEye, // FaBusinessTime
 } from "lucide-react";
 import { LinkedInIcon, MailIcon, MediumIcon } from "./Icons";
 
@@ -156,38 +159,38 @@ export const skills = [
   },
   {
     id: 6,
+    name: "Email Marketing & Newsletter",
+    icon: MailCheck,
+  },
+  {
+    id: 7,
     name: "Google Search Console ",
     icon: Globe,
   },
   {
-    id: 7,
-    name: " Google Business",
-    icon: Building2,
+    id: 8,
+    name: " Google Analytics",
+    icon: ChartColumn,
   },
   {
-    id: 8,
+    id: 9,
     name: "Profile Optimization",
     icon: UserCog,
   },
   {
-    id: 9,
+    id: 10,
+    name: "Competitor Analysis",
+    icon: ScanEye,
+  },
+  {
+    id: 11,
     name: "Canva",
     icon: Palette,
   },
   {
-    id: 10,
-    name: "Figma",
-    icon: PenTool,
-  },
-  {
-    id: 11,
+    id: 12,
     name: "Video Editing",
     icon: Clapperboard,
-  },
-  {
-    id: 12,
-    name: "Email Marketing & Newsletter",
-    icon: MailCheck,
   },
 ];
 
@@ -281,7 +284,7 @@ export const educationData = [
     date: "2019 –2022",
     icon: GraduationCap,
     description: [
-      "Completed BCA at University of Gujarat, building a strong foundation in digital marketing, analytics, and content strategy.",
+      "Completed BCA at University of Gujarat, with a strong foundation in computer science, programming, and networking.",
     ],
   },
 ];
