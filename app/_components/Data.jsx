@@ -17,6 +17,7 @@ import {
   MailCheck, // FaEnvelopeOpenText
   Building2, // FaBusinessTime
 } from "lucide-react";
+import { LinkedInIcon, MailIcon, MediumIcon } from "./Icons";
 
 /* -------------------------------------------------------------------------- */
 /*                                  MetaData                                  */
@@ -291,16 +292,17 @@ export const educationData = [
 
 export const contactInfo = [
   {
-    icon: Network,
-    name: "in/nidhi-m-patel-seo",
-    link: "https://www.linkedin.com/in/nidhi-m-patel-seo/",
+    icon: LinkedInIcon,
+    name: "in/nidhi-patel-marketer",
+    link: "https://www.linkedin.com/in/nidhi-patel-marketer/",
   },
   {
-    icon: Mail,
-    name: "nidhipatel2265@gmail.com",
+    icon: MediumIcon,
+    name: "@nidhi-patel-marketer",
+    link: "https://nidhi-patel-marketer.medium.com/",
   },
   {
-    icon: MapPin,
-    name: "Ahmedabad, India",
+    icon: MailIcon,
+    name: "nidhipatel.marketer@gmail.com",
   },
 ];
