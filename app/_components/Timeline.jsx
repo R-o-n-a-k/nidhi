@@ -11,7 +11,7 @@ const Timeline = ({ data, heading = "Timeline" }) => {
       <h1 className="heading">{heading}</h1>
       <div className="overflow-hidden">
         <div className="py-2 pl-5 md:pl-6">
-          <Accordion type="single" collapsible>
+          <Accordion type="single" collapsible defaultValue="item-0">
             <ol className="relative border-l border-[#D4D4D4] dark:border-[#3f3f3f] w-full">
               {data.map((item, index) => {
                 const Icon = item.icon;
