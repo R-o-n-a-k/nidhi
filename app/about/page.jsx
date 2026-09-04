@@ -4,8 +4,16 @@ import {
   certifications,
   certificatesDetail,
 } from "@/_components/Data.jsx";
-import Carousel from "@/_components/Carousel";
 import Image from "next/image";
+
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+
 
 const about = () => {
   return (
@@ -56,37 +64,39 @@ const about = () => {
           <br />
           <p>{certifications.secondPara}</p>
         </div>
-        <div className="mt-8 relative before:w-[90%] md:before:w-full before:h-full before:absolute before:content-[''] before:border-[6px] before:border-primary before:-top-6 before:-left-[4px] md:before:-top-6 md:before:-left-6 before:rounded-lg">
-          <Carousel>
-            {certificatesDetail.map((certificate) => {
-              return (
-                <div
-                  key={certificate.id}
-                  className="relative w-full h-[240px] md:h-[340px] group flex-shrink-0"
-                >
+        <Carousel className="w-full max-w-[90%] md:max-w-lg mx-auto">
+          <CarouselContent>
+            {certificatesDetail.map((certificate) => (
+              <CarouselItem key={certificate.id}>
+                <div className="relative w-full h-[240px] md:h-[340px] group ">
                   <Image
                     src={certificate.image}
                     alt={certificate.title}
                     width={250}
                     height={250}
-                    className="w-full h-full object-fill"
+                    className="w-full h-full object-fill rounded-lg"
                     placeholder="blur"
                     blurDataURL=" "
                   />
 
                   <div
-                    className="absolute flex items-center justify-center inset-0 bg-black/50 backdrop-blur-xs
-                  opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    className="rounded-lg absolute inset-0 flex items-center justify-center bg-black/50 backdrop-blur-xs opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                   >
-                    <span className="absolute uppercase text-white text-xs md:text-lg font-bold leading-loose tracking-[2px] md:tracking-[4px] text-shadow-lg">
+                    <span className="uppercase text-white text-xs md:text-lg font-bold tracking-[2px] md:tracking-[4px]">
                       {certificate.title}
                     </span>
                   </div>
                 </div>
-              );
-            })}
-          </Carousel>
-        </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+
+          {/* Buttons at bottom */}
+          <div className="flex justify-end gap-2 mt-3">
+            <CarouselPrevious className="static translate-y-0 cursor-pointer" />
+            <CarouselNext className="static translate-y-0 cursor-pointer" />
+          </div>
+        </Carousel>
       </div>
     </div>
   );
