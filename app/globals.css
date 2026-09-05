@@ -56,12 +56,10 @@
     --color-title-color: #ffffff;
     --color-subtitle-color: #9ca3af;
     --color-content: #d1d5db;
-  
     --color-border: #2a2a2a;
     --color-success: #34d399;
     --color-warning: #fbbf24;
     --color-danger: #f87171;
-
 
     --color-background: oklch(0.145 0 0);
     --color-foreground: oklch(0.985 0 0);
@@ -251,6 +249,22 @@ body {
   .dark .shadow-custom {
     box-shadow: 0 20px 25px -5px rgba(10, 10, 10, 0.9),
       0 10px 10px -5px rgba(0, 0, 0, 0.95);
+  }
+
+}
+
+@theme inline {
+  --animate-shiny-text: shiny-text 8s infinite;
+  @keyframes shiny-text {
+  0%, 90%, 100% {
+    background-position: calc(-100% - var(--shiny-width)) 0;
+
+    }
+  30%, 60% {
+    background-position: calc(100% + var(--shiny-width)) 0;
+
+    }
+
   }
 
 }

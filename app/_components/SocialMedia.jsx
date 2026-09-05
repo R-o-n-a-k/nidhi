@@ -1,6 +1,6 @@
 const SocialMedia = () => {
   return (
-      <h1 className="heading">Social</h1>
+      <h1 className="heading"></h1>
   );
 };
 

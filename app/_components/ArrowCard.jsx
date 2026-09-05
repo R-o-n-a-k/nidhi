@@ -1,11 +1,6 @@
 import Link from "next/link";
-// import {
-//     HoverCard,
-//     HoverCardContent,
-//     HoverCardTrigger,
-// } from "@/components/ui/hover-card"
-// import { AnimatedShinyText } from "../ui/animated-shiny-text";
-// import { BorderBeam } from "../ui/border-beam";
+import { AnimatedShinyText } from "@/components/ui/animated-shiny-text";
+import { BorderBeam } from "@/components/ui/border-beam";
 
 const ArrowCard = ({ blog, link }) => {
     return (
@@ -14,16 +9,16 @@ const ArrowCard = ({ blog, link }) => {
                 href={link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="my-3 relative group flex flex-nowrap py-3 px-4 pr-10 rounded-md border border-black/15 dark:border-white/20 hover:bg-black/5 dark:hover:bg-white/5 hover:text-black dark:text-white duration-100 ease-in-out"
+                className="my-3 relative group flex flex-nowrap py-3 px-4 pr-10 rounded-md border border-black/15 dark:border-white/20 hover:bg-black/5 dark:hover:text-white dark:hover:bg-white/5 hover:text-black dark:text-white duration-100 ease-in-out"
             >
                 <div className="flex flex-col flex-1">
                     <div className="text-sm md:text-base text-foreground font-medium mb-1 tracking-wide">
                         {blog.title}
                     </div>
                     <div className="text-[13px] md:text-sm text-content">
-                        {/* <AnimatedShinyText> */}
+                        <AnimatedShinyText>
                         {blog.description}
-                        {/* </AnimatedShinyText> */}
+                        </AnimatedShinyText>
                     </div>
                 </div>
 
@@ -44,7 +39,7 @@ const ArrowCard = ({ blog, link }) => {
                         className="-translate-x-1 group-hover:translate-x-0 transition-transform duration-300 ease-in-out"
                     />
                 </svg>
-                {/* <BorderBeam /> */}
+                <BorderBeam />
             </Link>
         </>
     )

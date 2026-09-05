@@ -9,7 +9,7 @@ Hi, I'm **Nidhi Patel**, a results-driven digital marketer with 1.3+ years of ex
 ### 🌟 Key Features
 
 - **Responsive Design:** Fully responsive layout optimized for all screen sizes.
-- **Page-wise SEO Metadata:** Custom SEO for Home, About, Career, Projects, and Contact pages.
+- **Page-wise SEO Metadata:** Custom SEO for Home, About, Career, Creations, and Contact pages.
 - **Dark/Light Mode Toggle:** Seamlessly switch between light and dark themes.
 - **Smooth Navigation:** Fast routing and transitions using Next.js and Framer Motion.
 - **Performance Optimized:** Image and code optimization for speed and user experience.

@@ -24,8 +24,8 @@ const Navbar = () => {
     },
     {
       icon: <FolderOpen className="icon-size" />,
-      path: "/project",
-      title: "Projects",
+      path: "/creations",
+      title: "Creations",
     },
     {
       icon: <Mail className="icon-size" />,
