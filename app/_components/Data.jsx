@@ -284,9 +284,9 @@ export const educationData = [
     location: "Ahmedabad, India",
     date: "2019 –2022",
     icon: GraduationCap,
-    description: [
-      "Completed BCA at University of Gujarat, with a strong foundation in computer science, programming, and networking.",
-    ],
+    // description: [
+    //   "Completed BCA at University of Gujarat, with a strong foundation in computer science, programming, and networking.",
+    // ],
   },
 ];
 
