@@ -1,6 +1,15 @@
+import ArrowCard from "./ArrowCard";
+import { blogsData } from "./Data";
+
 const Blogs = () => {
+
+  
+
   return (
-      <h1 className="heading">Blogs</h1>
+    <>
+      {blogsData.map((blog) => <ArrowCard blog={blog} link={blog.link} key={blog.id} />)}
+
+    </>
   );
 };
 
