@@ -297,18 +297,75 @@ export const educationData = [
 // Blog Data
 
 export const blogsData = [
-    {
-      id: 1,
-      title: "How to Repurpose One Blog Post Into 10 Pieces of Content",
-      description: "Learn how to repurpose one strong blog idea into ten engaging pieces across different content platforms.",
-      link:"https://nidhi-patel-marketer.medium.com/how-i-ranked-3-on-google-in-45-days-as-a-complete-beginner-beacd7cc6bef"
-    },
-    {
-      id: 2,
-      title: "How I Ranked #3 on Google in 45 Days (As a Complete Beginner)",
-      description: "Discover how a beginner used systematic local SEO strategies to rank an IT academy #3 on Google.",
-      link:"https://nidhi-patel-marketer.medium.com/how-to-repurpose-one-blog-post-into-10-pieces-of-content-2e96e885c2bb"
-    },]
+  {
+    id: 1,
+    title: "How to Repurpose One Blog Post Into 10 Pieces of Content",
+    description: "Learn how to repurpose one strong blog idea into ten engaging pieces across different content platforms.",
+    link: "https://nidhi-patel-marketer.medium.com/how-i-ranked-3-on-google-in-45-days-as-a-complete-beginner-beacd7cc6bef"
+  },
+  {
+    id: 2,
+    title: "How I Ranked #3 on Google in 45 Days (As a Complete Beginner)",
+    description: "Discover how a beginner used systematic local SEO strategies to rank an IT academy #3 on Google.",
+    link: "https://nidhi-patel-marketer.medium.com/how-to-repurpose-one-blog-post-into-10-pieces-of-content-2e96e885c2bb"
+  },]
+
+
+// Social Media Data
+export const socialCategoryButtons = [
+  {
+    category: "all",
+  },
+  {
+    category: "reels",
+  },
+  {
+    category: "posts",
+  },
+];
+
+
+export const socialMediaPosts = [
+  {
+    id: 1,
+    category: "posts",
+    title: "AI to the rescue",
+    image: "/images/socialMedia/post1.png",
+    postUrl: "https://www.instagram.com/codistepvtltd/p/DFOWx-CIXPi/",
+  },
+  {
+    id: 2,
+    category: "reels",
+    title: "Christmas Campaign",
+    thumbnail: "/videos/christmas-campaign-poster.jpg",
+    video: "/videos/christmas-campaign.mp4",
+    reelUrl: "https://magicui.design/docs/components/hero-video-dialog",
+  },
+  {
+    id: 4,
+    category: "reels",
+    title: "Mens Day Campaign",
+    thumbnail: "/videos/mens-day-campaign.mp4-poster.jpg",
+    video: "/videos/mens-day-campaign.mp4",
+    reelUrl: "https://magicui.design/docs/components/hero-video-dialog",
+  },
+  {
+    id: 6,
+    category: "reels",
+    title: "Social Media Reality",
+    thumbnail: "/videos/social-media-reality.jpg",
+    video: "/videos/social-media-reality.mp4",
+    reelUrl: "https://magicui.design/docs/components/hero-video-dialog",
+  },
+  {
+    id: 8,
+    category: "reels",
+    title: "Think Outside the Box",
+    thumbnail: "/videos/think-outside-the-box.jpg",
+    video: "/videos/think-outside-the-box.mp4",
+    reelUrl: "https://magicui.design/docs/components/hero-video-dialog",
+  },
+];
 
 /* -------------------------------------------------------------------------- */
 /*                                    Contact                                   */
