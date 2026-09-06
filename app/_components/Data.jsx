@@ -312,15 +312,15 @@ export const blogsData = [
 
 
 // Social Media Data
-export const socialCategoryButtons = [
+export const socialTypeButtons = [
   {
-    category: "all",
+    type: "all",
   },
   {
-    category: "reels",
+    type: "reels",
   },
   {
-    category: "posts",
+    type: "posts",
   },
 ];
 
@@ -328,14 +328,14 @@ export const socialCategoryButtons = [
 export const socialMediaPosts = [
   {
     id: 1,
-    category: "posts",
+    type: "posts",
     title: "AI to the rescue",
-    image: "/images/socialMedia/post1.png",
-    postUrl: "https://www.instagram.com/codistepvtltd/p/DFOWx-CIXPi/",
+    thumbnail: "/images/socialMedia/post1.png",
+    url: "https://www.instagram.com/codistepvtltd/p/DFOWx-CIXPi/",
   },
   {
     id: 2,
-    category: "reels",
+    type: "reels",
     title: "Christmas Campaign",
     thumbnail: "/videos/christmas-campaign-poster.jpg",
     video: "/videos/christmas-campaign.mp4",
@@ -343,7 +343,7 @@ export const socialMediaPosts = [
   },
   {
     id: 4,
-    category: "reels",
+    type: "reels",
     title: "Mens Day Campaign",
     thumbnail: "/videos/mens-day-campaign.mp4-poster.jpg",
     video: "/videos/mens-day-campaign.mp4",
@@ -351,7 +351,7 @@ export const socialMediaPosts = [
   },
   {
     id: 6,
-    category: "reels",
+    type: "reels",
     title: "Social Media Reality",
     thumbnail: "/videos/social-media-reality.jpg",
     video: "/videos/social-media-reality.mp4",
@@ -359,7 +359,7 @@ export const socialMediaPosts = [
   },
   {
     id: 8,
-    category: "reels",
+    type: "reels",
     title: "Think Outside the Box",
     thumbnail: "/videos/think-outside-the-box.jpg",
     video: "/videos/think-outside-the-box.mp4",

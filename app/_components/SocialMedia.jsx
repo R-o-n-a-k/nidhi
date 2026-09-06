@@ -2,47 +2,36 @@
 import { socialMediaPosts } from "./Data";
 import { Button } from "@/components/ui/button"
 import { useState } from "react";
-import { socialCategoryButtons } from "./Data";
+import { socialTypeButtons } from "./Data";
 
 const SocialMedia = () => {
-  const [filteredPosts, setFilteredPosts] = useState(socialMediaPosts);
-  const [activeCategory, setActiveCategory] = useState("all");
+  const [activeFilter, setActiveFilter] = useState("all");
 
-
-  const filterPosts  = (value) => {
-    if (value === "all") {
-      setFilteredPosts(socialMediaPosts);
-    } else {
-      const newPosts = socialMediaPosts.filter((post) => {
-        return value === post.category;
-      });
-      setFilteredPosts(newPosts);
-    }
-  };
-
-  const handleCategoryChange = (category) => {
-    setActiveCategory(category);
-    filterPosts(category);
-  }
+  const filteredPosts =
+    activeFilter === "all"
+      ? socialMediaPosts
+      : socialMediaPosts.filter(
+        (item) => item.type === activeFilter
+      );
 
   return (
     <>
       <div className="flex gap-2 mb-4">
-        {socialCategoryButtons.map((btn) => {
-          const isActive = activeCategory === btn.category;
+        {socialTypeButtons.map((btn) => {
+          const isActive = activeFilter === btn.type;
 
           return (
             <Button
-              key={btn.category}
+              key={btn.type}
               size="sm"
               variant={isActive ? "default" : "ghost"}
-              onClick={() => handleCategoryChange(btn.category)}
+              onClick={() => setActiveFilter(btn.type)}
               className={`capitalize cursor-pointer ${isActive
-                  ? ""
-                  : "hover:bg-transparent hover:underline underline-offset-4"
+                ? ""
+                : "hover:bg-transparent hover:underline underline-offset-4"
                 }`}
             >
-              {btn.category}
+              {btn.type}
             </Button>
           );
         })}
