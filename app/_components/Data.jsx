@@ -331,7 +331,7 @@ export const socialMediaPosts = [
     type: "reels",
     title: "Social Media Reality",
     thumbnail: "/images/thumbnails/social-media-reality-poster.jpg",
-    video: "/videos/social-media-reality.mp4",
+    video: "/videos/reels/social-media-reality.mp4",
     // reelUrl: "https://magicui.design/docs/components/hero-video-dialog",  need to add reel url for this video
   },
   {
@@ -346,7 +346,7 @@ export const socialMediaPosts = [
     type: "reels",
     title: "Christmas Campaign",
     thumbnail: "/images/thumbnails/christmas-campaign-poster.jpg",
-    video: "/videos/christmas-campaign.mp4",
+    video: "/videos/reels/christmas-campaign.mp4",
     // reelUrl: "https://magicui.design/docs/components/hero-video-dialog", need to add reel url for this video
   },
   {
@@ -361,7 +361,7 @@ export const socialMediaPosts = [
     type: "reels",
     title: "Social Media Creator Reality",
     thumbnail: "/images/thumbnails/social-media-creator-reality-poster.webp",
-    video: "/videos/social-media-creator-reality.mp4",
+    video: "/videos/reels/social-media-creator-reality.mp4",
     reelUrl: "https://www.instagram.com/reel/C76Egnfq-6e/?stkn=MTRlcXY4aHE4dHk4dw%3D%3D",
   },
   {
@@ -383,7 +383,7 @@ export const socialMediaPosts = [
     type: "reels",
     title: "Think Outside the Box",
     thumbnail: "/images/thumbnails/think-outside-the-box-poster.jpg",
-    video: "/videos/think-outside-the-box.mp4",
+    video: "/videos/reels/think-outside-the-box.mp4",
     // reelUrl: "https://magicui.design/docs/components/hero-video-dialog",  need to add reel url for this video
   },
   {
@@ -426,7 +426,7 @@ export const socialMediaPosts = [
     type: "reels",
     title: "Video Editing Reality",
     thumbnail: "/images/thumbnails/video-editing-reality-poster.webp",
-    video: "/videos/video-editing-reality.mp4",
+    video: "/videos/reels/video-editing-reality.mp4",
     reelUrl: "https://www.instagram.com/reel/C9OxSeCKvnf/?stkn=N3U4MXZxcjQ1bWVr",
   },
   {
@@ -441,7 +441,7 @@ export const socialMediaPosts = [
     type: "reels",
     title: "KPYXAL introduction",
     thumbnail: "/images/thumbnails/kpyxal-introduction-poster.webp",
-    video: "/videos/kpyxal-introduction.mp4",
+    video: "/videos/reels/kpyxal-introduction.mp4",
     reelUrl: "https://www.instagram.com/reel/C4pNTrDKoy5/?stkn=MWgwMWc2eXFnanlzZg%3D%3D",
   },
   {
@@ -484,7 +484,7 @@ export const socialMediaPosts = [
     type: "reels",
     title: "Chai Love",
     thumbnail: "/images/thumbnails/chai-love-poster.webp",
-    video: "/videos/chai-love.mp4",
+    video: "/videos/reels/chai-love.mp4",
     reelUrl: "https://www.instagram.com/reel/C68mh6qqtmN/?stkn=MW5kb2pwaWlnOXF4bA%3D%3D",
   },
   {
@@ -499,7 +499,7 @@ export const socialMediaPosts = [
     type: "reels",
     title: "Mens Day Campaign",
     thumbnail: "/images/thumbnails/mens-day-campaign-poster.jpg",
-    video: "/videos/mens-day-campaign.mp4",
+    video: "/videos/reels/mens-day-campaign.mp4",
     // reelUrl: "https://magicui.design/docs/components/hero-video-dialog", need to add reel url for this video
   },
 ];
