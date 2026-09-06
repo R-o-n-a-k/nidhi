@@ -3,6 +3,7 @@ import { socialMediaPosts } from "./Data";
 import { Button } from "@/components/ui/button"
 import { useState } from "react";
 import { socialTypeButtons } from "./Data";
+import SocialMediaCard from "./SocialMediaCard";
 
 const SocialMedia = () => {
   const [activeFilter, setActiveFilter] = useState("all");
@@ -16,7 +17,7 @@ const SocialMedia = () => {
 
   return (
     <>
-      <div className="flex gap-2 mb-4">
+      <div className="flex gap-2 mb-6">
         {socialTypeButtons.map((btn) => {
           const isActive = activeFilter === btn.type;
 
@@ -36,9 +37,18 @@ const SocialMedia = () => {
           );
         })}
       </div>
-      {filteredPosts.map((post) => (
-        <span>{post.title} <br /></span>
-      ))}
+
+      <div className="columns-2 gap-4 sm:columns-3 md:columns-4">
+        {filteredPosts.map((item) => (
+          <div key={item.id} className="mb-5 break-inside-avoid">
+            <SocialMediaCard
+              key={item.id}
+              item={item}
+            />
+          </div>
+        ))}
+
+      </div>
     </>
   );
 };
