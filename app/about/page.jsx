@@ -25,7 +25,7 @@ const about = () => {
         <p>{aboutPage.aboutSecondpara}</p>
       </div>
       {/* ----------------------------- Skills Section -----------------------------  */}
-      <h1 className="heading mt-8">Skills</h1>
+      <h1 className="heading mt-10">Skills</h1>
 
       <div className="grid grid-cols-3 md:grid-cols-4">
         {skills.map((skill, i) => {
@@ -57,7 +57,7 @@ const about = () => {
 
       {/* ----------------------------- Certifications Section -----------------------------  */}
 
-      <h1 className="heading mt-8">Certifications</h1>
+      <h1 className="heading mt-10">Certifications</h1>
       <div className="flex md:flex-row mb-12 justify-between gap-6 md:text-base">
         <div className="hidden md:block md:max-w-[390px] text-justify">
           <p>{certifications.firstPara}</p>

@@ -15,6 +15,8 @@ const Timeline = ({ data, heading = "Timeline" }) => {
             <ol className="relative border-l border-[#D4D4D4] dark:border-[#3f3f3f] w-full">
               {data.map((item, index) => {
                 const Icon = item.icon;
+                const hasDescription =
+                  item.description && item.description.length > 0;
                 return (
                   <li key={index} className="mb-8 ml-6 md:ml-8">
                     <span className="absolute flex items-center justify-center w-8 h-8 md:w-10 md:h-10 bg-primary rounded-full -left-4 md:-left-5 ring-4 ring-background text-white">
@@ -25,27 +27,37 @@ const Timeline = ({ data, heading = "Timeline" }) => {
                         {item.date}
                       </time>
 
-                      <AccordionTrigger>
+                      {/* If description exists → show accordion trigger */}
+                      {hasDescription ? (
+                        <AccordionTrigger>
+                          <h2 className="md:text-lg text-base font-medium text-title-color">
+                            {item.title} @ {item.company}
+                          </h2>
+                        </AccordionTrigger>
+                      ) : (
                         <h2 className="md:text-lg text-base font-medium text-title-color">
                           {item.title} @ {item.company}
                         </h2>
-                      </AccordionTrigger>
-
+                      )}
                       <p className="text-xs md:text-sm text-neutral-400 mb-2">
                         {item.location}
                       </p>
-                      <AccordionContent>
-                        <ul className="list-none space-y-1.5 md:space-y-1.5 w-full text-justify text-sm md:text-base text-content px-2 md:pl-4 relative">
-                          {item.description.map((point, i) => (
-                            <li
-                              key={i}
-                              className="relative before:content-['-'] before:absolute md:before:-left-4 before:-left-2"
-                            >
-                              {point}
-                            </li>
-                          ))}
-                        </ul>
-                      </AccordionContent>
+
+                      {/* Render accordion content only if description exists */}
+                      {hasDescription && (
+                        <AccordionContent>
+                          <ul className="list-none space-y-1.5 md:space-y-1.5 w-full text-justify text-sm md:text-base text-content px-2 md:pl-4 relative">
+                            {item.description.map((point, i) => (
+                              <li
+                                key={i}
+                                className="relative before:content-['-'] before:absolute md:before:-left-4 before:-left-2"
+                              >
+                                {point}
+                              </li>
+                            ))}
+                          </ul>
+                        </AccordionContent>
+                      )}
                     </AccordionItem>
                   </li>
                 );

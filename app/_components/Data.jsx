@@ -276,6 +276,7 @@ export const workData = [
   },
 ];
 
+//Education Data
 export const educationData = [
   {
     title: "BCA",
@@ -283,9 +284,223 @@ export const educationData = [
     location: "Ahmedabad, India",
     date: "2019 –2022",
     icon: GraduationCap,
-    description: [
-      "Completed BCA at University of Gujarat, with a strong foundation in computer science, programming, and networking.",
-    ],
+    // description: [
+    //   "Completed BCA at University of Gujarat, with a strong foundation in computer science, programming, and networking.",
+    // ],
+  },
+];
+
+
+/* -------------------------------------------------------------------------- */
+/*                                    Creations                                   */
+/* -------------------------------------------------------------------------- */
+// Blog Data
+
+export const blogsData = [
+  {
+    id: 1,
+    title: "How to Repurpose One Blog Post Into 10 Pieces of Content",
+    description: "Learn how to repurpose one strong blog idea into ten engaging pieces across different content platforms.",
+    link: "https://nidhi-patel-marketer.medium.com/how-i-ranked-3-on-google-in-45-days-as-a-complete-beginner-beacd7cc6bef"
+  },
+  {
+    id: 2,
+    title: "How I Ranked #3 on Google in 45 Days (As a Complete Beginner)",
+    description: "Discover how a beginner used systematic local SEO strategies to rank an IT academy #3 on Google.",
+    link: "https://nidhi-patel-marketer.medium.com/how-to-repurpose-one-blog-post-into-10-pieces-of-content-2e96e885c2bb"
+  },]
+
+
+// Social Media Data
+export const socialTypeButtons = [
+  {
+    type: "all",
+  },
+  {
+    type: "reels",
+  },
+  {
+    type: "posts",
+  },
+];
+
+
+export const socialMediaPosts = [
+  {
+    id: 1,
+    type: "reels",
+    title: "Social Media Reality",
+    thumbnail: "/images/thumbnails/social-media-reality-poster.jpg",
+    video: "/videos/reels/social-media-reality.mp4",
+    // reelUrl: "https://magicui.design/docs/components/hero-video-dialog",  need to add reel url for this video
+  },
+  {
+    id: 2,
+    type: "posts",
+    title: "AI to the rescue",
+    thumbnail: "/images/socialMediaPost/post1.webp",
+    url: "https://www.instagram.com/codistepvtltd/p/DFOWx-CIXPi/",
+  },
+  {
+    id: 3,
+    type: "reels",
+    title: "Christmas Campaign",
+    thumbnail: "/images/thumbnails/christmas-campaign-poster.jpg",
+    video: "/videos/reels/christmas-campaign.mp4",
+    // reelUrl: "https://magicui.design/docs/components/hero-video-dialog", need to add reel url for this video
+  },
+  {
+    id: 4,
+    type: "posts",
+    title: "AI Speeds Up Content Creation",
+    thumbnail: "/images/socialMediaPost/post2.webp",
+    url: "https://www.instagram.com/codistepvtltd/p/DFOWx-CIXPi/",
+  },
+  {
+    id: 5,
+    type: "reels",
+    title: "Social Media Creator Reality",
+    thumbnail: "/images/thumbnails/social-media-creator-reality-poster.webp",
+    video: "/videos/reels/social-media-creator-reality.mp4",
+    reelUrl: "https://www.instagram.com/reel/C76Egnfq-6e/?stkn=MTRlcXY4aHE4dHk4dw%3D%3D",
+  },
+  {
+    id: 6,
+    type: "posts",
+    title: "KPYXAL Business Marketing",
+    thumbnail: "/images/socialMediaPost/post3.webp",
+    url: "https://www.instagram.com/kpyxal_solutions_llp/p/C3EqwigtMat/",
+  },
+  {
+    id: 7,
+    type: "posts",
+    title: "Codiste Hackathon",
+    thumbnail: "/images/socialMediaPost/post4.webp",
+    url: "https://www.instagram.com/codistepvtltd/p/DESD8-MNr-v/",
+  },
+  {
+    id: 8,
+    type: "reels",
+    title: "Think Outside the Box",
+    thumbnail: "/images/thumbnails/think-outside-the-box-poster.jpg",
+    video: "/videos/reels/think-outside-the-box.mp4",
+    // reelUrl: "https://magicui.design/docs/components/hero-video-dialog",  need to add reel url for this video
+  },
+  {
+    id: 9,
+    type: "posts",
+    title: "𝐀𝐈 𝐊𝐧𝐨𝐰𝐬 𝐇𝐮𝐦𝐚𝐧𝐬 𝐁𝐞𝐭𝐭𝐞𝐫",
+    thumbnail: "/images/socialMediaPost/post5.webp",
+    url: " https://www.instagram.com/codistepvtltd/p/DC8eL9lJDTA/",
+  },
+  {
+    id: 10,
+    type: "posts",
+    title: "kpyxal Leave Meme",
+    thumbnail: "/images/socialMediaPost/post12.webp",
+    url: " https://www.instagram.com/kpyxal_solutions_llp/p/C3RmYQEtul0/",
+  },
+  {
+    id: 11,
+    type: "posts",
+    title: "Codiste Christmas Campaign",
+    thumbnail: "/images/socialMediaPost/post6.webp",
+    url: " https://www.instagram.com/codistepvtltd/p/DDKZHG4M129/",
+  },
+  {
+    id: 12,
+    type: "posts",
+    title: "KPYXAL Excellence in Marketing",
+    thumbnail: "/images/socialMediaPost/post7.webp",
+    url: " https://www.instagram.com/kpyxal_solutions_llp/p/C3AELtVN89Y/",
+  },
+  {
+    id: 13,
+    type: "posts",
+    title: "KPYXAL Website Service Campaign",
+    thumbnail: "/images/socialMediaPost/post11.webp",
+    url: " https://www.instagram.com/kpyxal_solutions_llp/p/C3ZdcPkNUL6/",
+  },
+  {
+    id: 14,
+    type: "reels",
+    title: "Video Editing Reality",
+    thumbnail: "/images/thumbnails/video-editing-reality-poster.webp",
+    video: "/videos/reels/video-editing-reality.mp4",
+    reelUrl: "https://www.instagram.com/reel/C9OxSeCKvnf/?stkn=N3U4MXZxcjQ1bWVr",
+  },
+  {
+    id: 15,
+    type: "posts",
+    title: "Codiste Hackathon Campaign",
+    thumbnail: "/images/socialMediaPost/post9.webp",
+    url: "https://www.instagram.com/codistepvtltd/p/DEWiUj5I6gL/",
+  },
+  {
+    id: 16,
+    type: "reels",
+    title: "KPYXAL introduction",
+    thumbnail: "/images/thumbnails/kpyxal-introduction-poster.webp",
+    video: "/videos/reels/kpyxal-introduction.mp4",
+    reelUrl: "https://www.instagram.com/reel/C4pNTrDKoy5/?stkn=MWgwMWc2eXFnanlzZg%3D%3D",
+  },
+  {
+    id: 17,
+    type: "posts",
+    title: "Manager Mindset",
+    thumbnail: "/images/socialMediaPost/post8.webp",
+    url: "https://www.instagram.com/kpyxal_solutions_llp/p/C7Vdn7INBW6/",
+  },
+  {
+    id: 18,
+    type: "posts",
+    title: "Deepseek News",
+    thumbnail: "/images/socialMediaPost/post10.webp",
+    url: "https://www.instagram.com/codistepvtltd/p/DFf5cvRMtuN/",
+  },
+  {
+    id: 19,
+    type: "posts",
+    title: "Free Seo Tools for Markters",
+    thumbnail: "/images/socialMediaPost/post13.webp",
+    url: "https://lnkd.in/p/dqTCz4G5",
+  },
+  {
+    id: 20,
+    type: "posts",
+    title: "Alt text Importance for SEO",
+    thumbnail: "/images/socialMediaPost/post14.webp",
+    url: "https://lnkd.in/p/ds_SnhV5",
+  },
+  {
+    id: 21,
+    type: "posts",
+    title: "CRED IPL Marketing Strategy",
+    thumbnail: "/images/socialMediaPost/post15.webp",
+    url: "https://lnkd.in/p/d_juq_-t",
+  },
+  {
+    id: 22,
+    type: "reels",
+    title: "Chai Love",
+    thumbnail: "/images/thumbnails/chai-love-poster.webp",
+    video: "/videos/reels/chai-love.mp4",
+    reelUrl: "https://www.instagram.com/reel/C68mh6qqtmN/?stkn=MW5kb2pwaWlnOXF4bA%3D%3D",
+  },
+  {
+    id: 23,
+    type: "posts",
+    title: "CRED IPL Success Strategy",
+    thumbnail: "/images/socialMediaPost/post16.webp",
+    url: "https://lnkd.in/p/dVGhmhQs",
+  },
+  {
+    id: 24,
+    type: "reels",
+    title: "Mens Day Campaign",
+    thumbnail: "/images/thumbnails/mens-day-campaign-poster.jpg",
+    video: "/videos/reels/mens-day-campaign.mp4",
+    // reelUrl: "https://magicui.design/docs/components/hero-video-dialog", need to add reel url for this video
   },
 ];
 
